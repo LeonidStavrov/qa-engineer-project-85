@@ -1,0 +1,31 @@
+---
+- summary: |
+    Проверка регистрации
+  requirement: |
+    На сайте должна быть возможность создать аккаунт
+  prerequisites: |
+    Открыта страница регистрации
+  test-data: |
+    Nickname = User Email = user@mail.com Password = goodpass
+  steps:
+    - Вводим Логин
+    - Вводим Почту
+    - Вводим пароль
+    - Повторяем пароль
+  expected-result: |
+    Успешная регистрация
+
+- summary: |
+    Проверка авторизации
+  requirement: |
+    При верном вводе логина и пароля, пользователь должен войти в систему
+  prerequisites: |
+    Открыта страница авторизации
+  test-data: |
+    Email = user@mail.com Password = goodpass
+  steps:
+    - Вводим Логин
+    - Вводим пароль
+  expected-result: |
+    Успешная авторизация
+
